@@ -1,0 +1,24 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    @include font(36px, 700, 1.17);
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+}

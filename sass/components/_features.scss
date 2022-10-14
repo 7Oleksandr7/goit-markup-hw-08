@@ -1,0 +1,29 @@
+.features-wrap {
+  width: 270px;
+  height: 120px;
+
+  @extend %flex-center;
+
+  margin-bottom: 30px;
+
+  background: var(--secondary-bg-color);
+  border-radius: 4px;
+
+  &__icon {
+    height: 70px;
+    width: 70px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    @include font(14px, 700, 1.14);
+
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: var(--secondary-text-color);
+    line-height: 1.71;
+  }
+}
