@@ -1,5 +1,12 @@
 .whatwedo {
-  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @include desktop {
+    display: inline;
+    padding-top: 0;
+  }
 
   &__wrap {
     position: relative;
