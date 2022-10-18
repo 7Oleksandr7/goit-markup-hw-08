@@ -63,51 +63,55 @@
           </li>
         </ul>
       </div>
+      
       <!-- Мобільне меню -->
-      <div class="mob-menu is-hidden">
+      <div class="backdrop is-hidden">
+      <div class="mob-menu">
         <div class="page-header__content container">
           <button type="button">X</button>
-        <nav class="page-header__nav">
-          <a href="./index.html" class="logo">
-            <span class="logo--accent">Web</span>Studio</a
-          >
-          <ul class="page-header__list list">
-            <li class="page-header__item">
-              <a
-                href="./index.html"
-                class="page-header__link page-header__link--current"
-                >Студія</a
-              >
+          <nav class="page-header__nav">
+            <a href="./index.html" class="logo">
+              <span class="logo--accent">Web</span>Studio</a
+            >
+            <ul class="page-header__list list">
+              <li class="page-header__item">
+                <a
+                  href="./index.html"
+                  class="page-header__link page-header__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="page-header__item">
+                <a href="./portfolio.html" class="page-header__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="page-header__item">
+                <a href="" class="page-header__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact list">
+            <li class="contact__item">
+              <a class="contact__link" href="mailto:info@devstudio.com">
+                <svg class="contact__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="page-header__item">
-              <a href="./portfolio.html" class="page-header__link">Портфоліо</a>
-            </li>
-            <li class="page-header__item">
-              <a href="" class="page-header__link">Контакти</a>
+            <li class="contact__item">
+              <a class="contact__link" href="tel:+380961111111">
+                <svg class="contact__icon" width="10px" height="16px">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="contact list">
-          <li class="contact__item">
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact__item">
-            <a class="contact__link" href="tel:+380961111111">
-              <svg class="contact__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
       </div>
-
     </header>
 
     <!--Головна сторінка-->
@@ -224,21 +228,21 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/desktop/team1-desk-1x.jpg 1x
+                    ./images/team/desktop/team1-desk-1x.jpg 1x,
                     ./images/team/desktop/team1-desk-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/team/tablet/team1-tab-1x.jpg 1x
+                    ./images/team/tablet/team1-tab-1x.jpg 1x,
                     ./images/team/tablet/team1-tab-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/mobile/team1-mob-1x.jpg 1x
+                    ./images/team/mobile/team1-mob-1x.jpg 1x,
                     ./images/team/mobile/team1-mob-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
@@ -287,21 +291,21 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/desktop/team2-desk-1x.jpg 1x
+                    ./images/team/desktop/team2-desk-1x.jpg 1x,
                     ./images/team/desktop/team2-desk-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/team/tablet/team2-tab-1x.jpg 1x
+                    ./images/team/tablet/team2-tab-1x.jpg 1x,
                     ./images/team/tablet/team2-tab-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/mobile/team2-mob-1x.jpg 1x
+                    ./images/team/mobile/team2-mob-1x.jpg 1x,
                     ./images/team/mobile/team2-mob-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
@@ -350,21 +354,21 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/desktop/team3-desk-1x.jpg 1x
+                    ./images/team/desktop/team3-desk-1x.jpg 1x,
                     ./images/team/desktop/team3-desk-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/team/tablet/team3-tab-1x.jpg 1x
+                    ./images/team/tablet/team3-tab-1x.jpg 1x,
                     ./images/team/tablet/team3-tab-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/mobile/team3-mob-1x.jpg 1x
+                    ./images/team/mobile/team3-mob-1x.jpg 1x,
                     ./images/team/mobile/team3-mob-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
@@ -413,21 +417,21 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/desktop/team4-desk-1x.jpg 1x
+                    ./images/team/desktop/team4-desk-1x.jpg 1x,
                     ./images/team/desktop/team4-desk-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/team/tablet/team4-tab-1x.jpg 1x
+                    ./images/team/tablet/team4-tab-1x.jpg 1x,
                     ./images/team/tablet/team4-tab-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/mobile/team4-mob-1x.jpg 1x
+                    ./images/team/mobile/team4-mob-1x.jpg 1x,
                     ./images/team/mobile/team4-mob-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
