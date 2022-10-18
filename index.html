@@ -21,7 +21,68 @@
   <body>
     <!--Шапка сайту-->
     <header class="page-header">
-      <div class="page-header__content container">
+      <div class="menu-mob">
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-mob-icon">
+            <use href="./images/icons.svg#icon-menu-mobile"> 
+            </use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile menu">
+          <div class="menu-mob">
+            <button class="menu-toggle js-close-menu">
+              <svg class="menu-mob-icon">
+              <use href="./images/icons.svg#icon-close-mobile"> 
+              </use>
+              </svg>
+            </button>
+          </div>
+          <ul class="menu-mob-list list">
+            <li class="menu-mob-item">
+              <a
+                href="./index.html"
+                class="menu-mob-link actual"
+                >Студія</a
+              >
+            </li>
+            <li class="menu-mob-item">
+              <a href="./portfolio.html" class="menu-mob-link">Портфоліо</a>
+            </li>
+            <li class="menu-mob-item">
+              <a href="" class="menu-mob-link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="contact-mob list">
+          <li class="contact-mob-item">
+            <a class="contact-mob-link" href="tel:+380961111111">
+               +38 096 111 11 11
+            </a>
+          </li>
+          <li class="contact-mob-item">
+            <a class="contact-mob-link mail-mob" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+
+        </ul>
+          <ul class="mob-social-list list">
+                  <li class="mob-social-item">
+                    <a href="" class="mob-social-link" >Instagram</a>
+                  </li>
+                  <li class="mob-social-item">
+                    <a href="" class="mob-social-link">Twitter</a>
+                  </li>
+                  <li class="mob-social-item">
+                    <a href="" class="mob-social-link">Facebook</a>
+                  </li>
+                  <li class="mob-social-item">
+                    <a href="" class="mob-social-link">LinkedIn</a>
+                  </li>
+                </ul>
+      </div>
+    </header>
+    
+      <div class="page-header__content container">      
         <nav class="page-header__nav">
           <!-- logo -->
           <a href="./index.html" class="logo">
@@ -63,57 +124,7 @@
           </li>
         </ul>
       </div>
-      
-      <!-- Мобільне меню -->
-      <div class="backdrop is-hidden">
-      <div class="mob-menu">
-        <div class="page-header__content container">
-          <button type="button">X</button>
-          <nav class="page-header__nav">
-            <a href="./index.html" class="logo">
-              <span class="logo--accent">Web</span>Studio</a
-            >
-            <ul class="page-header__list list">
-              <li class="page-header__item">
-                <a
-                  href="./index.html"
-                  class="page-header__link page-header__link--current"
-                  >Студія</a
-                >
-              </li>
-              <li class="page-header__item">
-                <a href="./portfolio.html" class="page-header__link"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="page-header__item">
-                <a href="" class="page-header__link">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="contact list">
-            <li class="contact__item">
-              <a class="contact__link" href="mailto:info@devstudio.com">
-                <svg class="contact__icon" width="16px" height="12px">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contact__item">
-              <a class="contact__link" href="tel:+380961111111">
-                <svg class="contact__icon" width="10px" height="16px">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      </div>
-    </header>
-
+    
     <!--Головна сторінка-->
     <main>
       <!--Герой-->
@@ -698,5 +709,6 @@
     </div>
     <!-- js -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

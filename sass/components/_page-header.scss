@@ -1,6 +1,7 @@
 .page-header {
   background-color: var(--primary-white-color);
   border-bottom: 1px solid var(--primary-border-color);
+  position: relative;
 
   &__content {
     @include tablet {
@@ -13,7 +14,7 @@
     }
   }
   &__nav {
-      padding: 16px 0;
+    padding: 16px 0;
 
     @include tablet {
       display: flex;
@@ -83,4 +84,34 @@
     background-color: var(--accent-color);
     border-radius: 2px;
   }
+
+  @media screen and (max-width: 767px) {
+    .menu-mob {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+
+      &-icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  @include tablet {
+    .menu-mob {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    .menu-mob {
+      display: none;
+    }
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: var(--accent-color);
 }
