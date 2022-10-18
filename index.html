@@ -176,11 +176,33 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="section__list list">
             <li class="section__item">
-              <img
-                src="./images/img11-igor.jpeg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/team1-desk-1x.jpg 1x
+                    ./images/team/desktop/team1-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/team1-tab-1x.jpg 1x
+                    ./images/team/tablet/team1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/team1-mob-1x.jpg 1x
+                    ./images/team/mobile/team1-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team/desktop/team1-desk-1x.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -217,11 +239,33 @@
               </div>
             </li>
             <li class="section__item">
-              <img
-                src="./images/img12-olga.jpeg"
-                alt="Ольга Рєпіна"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/team2-desk-1x.jpg 1x
+                    ./images/team/desktop/team2-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/team2-tab-1x.jpg 1x
+                    ./images/team/tablet/team2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/team2-mob-1x.jpg 1x
+                    ./images/team/mobile/team2-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team/desktop/team2-desk-1x.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -258,11 +302,33 @@
               </div>
             </li>
             <li class="section__item">
-              <img
-                src="./images/img13-mykola.jpeg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/team3-desk-1x.jpg 1x
+                    ./images/team/desktop/team3-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/team3-tab-1x.jpg 1x
+                    ./images/team/tablet/team3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/team3-mob-1x.jpg 1x
+                    ./images/team/mobile/team3-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team/mobile/team3-mob-1x.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -299,11 +365,33 @@
               </div>
             </li>
             <li class="section__item">
-              <img
-                src="./images/img14-myhailo.jpeg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/team4-desk-1x.jpg 1x
+                    ./images/team/desktop/team4-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/team4-tab-1x.jpg 1x
+                    ./images/team/tablet/team4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/team4-mob-1x.jpg 1x
+                    ./images/team/mobile/team4-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team/desktop/team4-desk-1x.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -399,76 +487,78 @@
       <div class="container footer-content">
         <!-- Адрес -->
         <div class="logo-address-joinin">
-        <div class="logo-address">
-          <a href="./index.html" class="logo">
-            <span class="logo--accent">Web</span
-            ><span class="white">Studio</span></a
-          >
-          <address class="address">
-            <ul class="address-list list">
-              <li class="address-list-item">
-                <a
-                  href="https://goo.gl/maps/fWM63ZZyUuKe5TPd6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="white"
-                >
-                  <span class="white">м. Київ, бульв. Лесі Українки, 26 </span>
-                </a>
-              </li>
-              <li class="address-list-item">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li class="address-list-item">
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <!--Приєднуйтесь-footer -->
-        <div class="joinin">
-          <div class="strong">
-            <strong class="join-title">приєднуйтесь</strong>
-          </div>         
-          <div class="social-list-join">
-            <ul class="social-list list">
-              <li class="social-list__item">
-                <a href="" class="social-logo-footer">
-                  <svg class="social-list__icon">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="" class="social-logo-footer">
-                  <svg class="social-list__icon">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="" class="social-logo-footer">
-                  <svg class="social-list__icon">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="" class="social-logo-footer">
-                  <svg class="social-list__icon">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div class="logo-address">
+            <a href="./index.html" class="logo">
+              <span class="logo--accent">Web</span
+              ><span class="white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="address-list list">
+                <li class="address-list-item">
+                  <a
+                    href="https://goo.gl/maps/fWM63ZZyUuKe5TPd6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="white"
+                  >
+                    <span class="white"
+                      >м. Київ, бульв. Лесі Українки, 26
+                    </span>
+                  </a>
+                </li>
+                <li class="address-list-item">
+                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="address-list-item">
+                  <a href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
           </div>
-        </div>
+          <!--Приєднуйтесь-footer -->
+          <div class="joinin">
+            <div class="strong">
+              <strong class="join-title">приєднуйтесь</strong>
+            </div>
+            <div class="social-list-join">
+              <ul class="social-list list">
+                <li class="social-list__item">
+                  <a href="" class="social-logo-footer">
+                    <svg class="social-list__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-logo-footer">
+                    <svg class="social-list__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-logo-footer">
+                    <svg class="social-list__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-logo-footer">
+                    <svg class="social-list__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!--Підпишиться-footer -->
         <div class="signup">
           <div class="strong">
             <strong class="sign-title">Підпишіться на розсилку</strong>
-          </div>           
+          </div>
           <form class="sign-form">
             <label class="email-footer">
               <input
