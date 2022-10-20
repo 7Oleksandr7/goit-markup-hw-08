@@ -1,12 +1,12 @@
 .clients {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 30px;
 
   @include tablet {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 30px;
   }
 
   @include desktop {

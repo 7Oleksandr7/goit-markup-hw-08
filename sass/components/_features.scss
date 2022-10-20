@@ -1,31 +1,24 @@
 .feature-item {
   flex-basis: calc((100% - 90px) / 4);
 
-  @include tablet {
+    @include tablet {
     margin-right: 30px;
-      &:last-child {
-        margin-right: 0;
-        margin-bottom: 0;
-          
-      &:nth-child(2){
-        margin-right: 0;
-      } 
     }
-  }
+//    &:nth-child(2){
+//     margin-right: 0;
+//   } 
 
-  @include desktop {
+    @include desktop {
     flex-basis: calc((100% - 90px) / 4);
     margin-right: 30px;
-    margin-bottom: 0;
-
     text-align: left;
-
   }
 
-  &:last-child {
+    &:last-child {
     margin-right: 0;
+    margin-bottom: 0;
+    }
   }
-}
 
 .features-wrap {
   width: 450px;
@@ -43,8 +36,6 @@
 
   @extend %flex-center;
 
-  margin-bottom: 30px;
-
   background: var(--secondary-bg-color);
   border-radius: 4px;
 
@@ -54,17 +45,17 @@
   }
 
   &__title {
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 
     @include font(14px, 700, 1.14);
     letter-spacing: 0.03em;
-
     text-transform: uppercase;
   }
 
   &__text {
     color: var(--secondary-text-color);
-    line-height: 1.71;
+    @include font(14px, 400, 1.71);
     letter-spacing: 0.03em;
   }
 }
