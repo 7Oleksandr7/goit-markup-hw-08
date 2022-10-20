@@ -3,21 +3,28 @@
 
   @include tablet {
     margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+          
+      &:nth-child(2){
+        margin-right: 0;
+      } 
+    }
   }
 
   @include desktop {
     flex-basis: calc((100% - 90px) / 4);
     margin-right: 30px;
+    margin-bottom: 0;
+
+    text-align: left;
+
   }
 
   &:last-child {
     margin-right: 0;
-    margin-bottom: 0;
   }
-
-   &:nth-child(2){
-    margin-right: 0;
-  } 
 }
 
 .features-wrap {

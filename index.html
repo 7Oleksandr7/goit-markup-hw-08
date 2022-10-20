@@ -21,6 +21,7 @@
   <body>
     <!--Шапка сайту-->
     <header class="page-header">
+      <!-- Mobile-menu -->
       <div class="menu-mob">
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="menu-mob-icon">
@@ -28,7 +29,7 @@
             </use>
           </svg>
         </button>
-        <div class="menu-container js-menu-container" id="mobile menu">
+        <div class="menu-container js-menu-container" id="mobile-menu">
           <div class="menu-mob">
             <button class="menu-toggle js-close-menu">
               <svg class="menu-mob-icon">
@@ -53,35 +54,34 @@
             </li>
           </ul>
           <ul class="contact-mob list">
-          <li class="contact-mob-item">
-            <a class="contact-mob-link" href="tel:+380961111111">
+            <li class="contact-mob-item">
+              <a class="contact-mob-link" href="tel:+380961111111">
                +38 096 111 11 11
-            </a>
-          </li>
-          <li class="contact-mob-item">
+              </a>
+            </li>
+            <li class="contact-mob-item">
             <a class="contact-mob-link mail-mob" href="mailto:info@devstudio.com">
               info@devstudio.com
             </a>
-          </li>
-
-        </ul>
+            </li>
+          </ul>
           <ul class="mob-social-list list">
-                  <li class="mob-social-item">
-                    <a href="" class="mob-social-link" >Instagram</a>
-                  </li>
-                  <li class="mob-social-item">
-                    <a href="" class="mob-social-link">Twitter</a>
-                  </li>
-                  <li class="mob-social-item">
-                    <a href="" class="mob-social-link">Facebook</a>
-                  </li>
-                  <li class="mob-social-item">
-                    <a href="" class="mob-social-link">LinkedIn</a>
-                  </li>
-                </ul>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link" >Instagram</a>
+              </li>
+              <li class="mob-social-item">
+                  <a href="" class="mob-social-link">Twitter</a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link">Facebook</a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link">LinkedIn</a>
+              </li>
+          </ul>
+        </div>
       </div>
-    </header>
-    
+      <!-- Header -->
       <div class="page-header__content container">      
         <nav class="page-header__nav">
           <!-- logo -->
@@ -124,7 +124,7 @@
           </li>
         </ul>
       </div>
-    
+    </header>
     <!--Головна сторінка-->
     <main>
       <!--Герой-->
@@ -173,7 +173,7 @@
                 </svg>
               </div>
               <h3 class="features-wrap__title">планування</h3>
-              <p class="features-wrap_text">
+              <p class="features-wrap__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>

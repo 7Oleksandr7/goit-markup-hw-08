@@ -170,16 +170,12 @@ input {
 }
 @media screen and (min-width: 1200px) {
   .section__item {
+    margin-bottom: 0;
     margin-right: 30px;
   }
 }
 .section__item:last-child {
   margin-bottom: 0;
-}
-@media screen and (min-width: 1200px) {
-  .section__item:last-child {
-    margin-right: 0;
-  }
 }
 
 .checkbox, .accept, .sign-button, .social-logo-footer, .client-logo, .social-list__logo, .social-list, .features-wrap {
@@ -623,19 +619,24 @@ input {
   .feature-item {
     margin-right: 30px;
   }
+  .feature-item:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .feature-item:last-child:nth-child(2) {
+    margin-right: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .feature-item {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
     margin-right: 30px;
+    margin-bottom: 0;
+    text-align: left;
   }
 }
 .feature-item:last-child {
-  margin-right: 0;
-  margin-bottom: 0;
-}
-.feature-item:nth-child(2) {
   margin-right: 0;
 }
 
@@ -684,7 +685,6 @@ input {
 @media screen and (min-width: 1200px) {
   .whatwedo {
     display: inline;
-    padding-top: 0;
   }
 }
 .whatwedo__wrap {
@@ -761,7 +761,7 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 30px;
+  gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .clients {
@@ -772,7 +772,7 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 30px;
+    gap: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
