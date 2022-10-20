@@ -5,7 +5,7 @@ body {
   @include font(14px, 500, 1.14);
 
   letter-spacing: 0.02em;
-  background-color: teal;
+  background-color: var(--primary-white-color);
 }
 
 h1,
@@ -16,7 +16,6 @@ h5,
 h6,
 p {
   margin: 0;
-  font-weight: 300;
 }
 
 img {
