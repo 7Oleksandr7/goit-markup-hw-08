@@ -4,8 +4,8 @@
   }
 
   @include desktop {
-    display: inline;
-
+    @extend %flex-center;
+    padding-top: 0;
   }
 
   &__wrap {
