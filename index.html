@@ -22,28 +22,26 @@
     <!--Шапка сайту-->
     <header class="page-header">
       <div class="menu-mob">
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="menu-mob-icon">
-            <use href="./images/icons.svg#icon-menu-mobile"> 
-            </use>
+            <use href="./images/icons.svg#icon-menu-mobile"></use>
           </svg>
         </button>
-        <div class="menu-container js-menu-container" id="mobile menu">
+        <div class="menu-container js-menu-container" id="mobile-menu">
           <div class="menu-mob">
             <button class="menu-toggle js-close-menu">
               <svg class="menu-mob-icon">
-              <use href="./images/icons.svg#icon-close-mobile"> 
-              </use>
+                <use href="./images/icons.svg#icon-close-mobile"></use>
               </svg>
             </button>
           </div>
           <ul class="menu-mob-list list">
             <li class="menu-mob-item">
-              <a
-                href="./index.html"
-                class="menu-mob-link actual"
-                >Студія</a
-              >
+              <a href="./index.html" class="menu-mob-link actual">Студія</a>
             </li>
             <li class="menu-mob-item">
               <a href="./portfolio.html" class="menu-mob-link">Портфоліо</a>
@@ -53,36 +51,38 @@
             </li>
           </ul>
           <ul class="contact-mob list">
-          <li class="contact-mob-item">
-            <a class="contact-mob-link" href="tel:+380961111111">
-               +38 096 111 11 11
-            </a>
-          </li>
-          <li class="contact-mob-item">
-            <a class="contact-mob-link mail-mob" href="mailto:info@devstudio.com">
-              info@devstudio.com
-            </a>
-          </li>
-
-        </ul>
+            <li class="contact-mob-item">
+              <a class="contact-mob-link" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="contact-mob-item">
+              <a
+                class="contact-mob-link mail-mob"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
           <ul class="mob-social-list list">
-                  <li class="mob-social-item">
-                    <a href="" class="mob-social-link" >Instagram</a>
-                  </li>
-                  <li class="mob-social-item">
-                    <a href="" class="mob-social-link">Twitter</a>
-                  </li>
-                  <li class="mob-social-item">
-                    <a href="" class="mob-social-link">Facebook</a>
-                  </li>
-                  <li class="mob-social-item">
-                    <a href="" class="mob-social-link">LinkedIn</a>
-                  </li>
-                </ul>
+            <li class="mob-social-item">
+              <a href="" class="mob-social-link">Instagram</a>
+            </li>
+            <li class="mob-social-item">
+              <a href="" class="mob-social-link">Twitter</a>
+            </li>
+            <li class="mob-social-item">
+              <a href="" class="mob-social-link">Facebook</a>
+            </li>
+            <li class="mob-social-item">
+              <a href="" class="mob-social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
-    
-      <div class="page-header__content container">      
+
+      <div class="page-header__content container">
         <nav class="page-header__nav">
           <!-- logo -->
           <a href="./index.html" class="logo">
@@ -124,7 +124,7 @@
           </li>
         </ul>
       </div>
-    
+    </header>
     <!--Головна сторінка-->
     <main>
       <!--Герой-->
@@ -138,7 +138,7 @@
       </section>
 
       <!--Особливості-->
-      <section class="section">
+      <section class="section feature">
         <div class="container">
           <h2 class="section__title visually-hidden">Особливості Студії</h2>
           <ul class="section__list list">
@@ -200,7 +200,7 @@
             <li class="section__item list">
               <div class="whatwedo__wrap">
                 <img
-                srcset="
+                  srcset="
                     ./images/whatwedo/desktop/desktop-apps-1x.jpg 1x,
                     ./images/whatwedo/desktop/desktop-apps-2x.jpg 2x
                   "
@@ -213,7 +213,7 @@
             <li class="section__item list">
               <div class="whatwedo__wrap">
                 <img
-                srcset="
+                  srcset="
                     ./images/whatwedo/desktop/mobile-apps-1x.jpg 1x,
                     ./images/whatwedo/desktop/mobile-apps-2x.jpg 2x
                   "
@@ -226,7 +226,7 @@
             <li class="section__item list">
               <div class="whatwedo__wrap">
                 <img
-                srcset="
+                  srcset="
                     ./images/whatwedo/desktop/design-1x.jpg 1x,
                     ./images/whatwedo/desktop/design-2x.jpg 2x
                   "
@@ -586,9 +586,7 @@
           </div>
           <!--Приєднуйтесь-footer -->
           <div class="joinin">
-            <div class="strong">
               <strong class="join-title">приєднуйтесь</strong>
-            </div>
             <div class="social-list-join">
               <ul class="social-list list">
                 <li class="social-list__item">
@@ -625,9 +623,7 @@
         </div>
         <!--Підпишиться-footer -->
         <div class="signup">
-          <div class="strong">
             <strong class="sign-title">Підпишіться на розсилку</strong>
-          </div>
           <form class="sign-form">
             <label class="email-footer">
               <input

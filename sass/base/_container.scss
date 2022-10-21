@@ -4,7 +4,13 @@
   margin-left: auto;
   margin-right: auto;
 
-  width: 480px;
+@media screen and (min-width: 320px) {
+    width: 100%;
+  }
+
+ @include mobile {
+    width: 480px;
+  }
 
   @include tablet {
     width: 768px;
