@@ -21,62 +21,62 @@
   <body>
     <!--Шапка сайту-->
     <header class="page-header">
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="40px" height="40px">
+          <use href="./images/icons.svg#icon-menu-mobile"></use>
+        </svg>
+      </button>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
           <svg width="40px" height="40px">
-            <use href="./images/icons.svg#icon-menu-mobile"></use>
+            <use href="./images/icons.svg#icon-close-mobile"></use>
           </svg>
         </button>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-              <svg width="40px" height="40px">
-                <use href="./images/icons.svg#icon-close-mobile"></use>
-              </svg>
-            </button>
-          <ul class="menu-mob-list list">
-            <li class="menu-mob-item">
-              <a href="./index.html" class="menu-mob-link actual">Студія</a>
-            </li>
-            <li class="menu-mob-item">
-              <a href="./portfolio.html" class="menu-mob-link">Портфоліо</a>
-            </li>
-            <li class="menu-mob-item">
-              <a href="" class="menu-mob-link">Контакти</a>
-            </li>
-          </ul>
-          <ul class="contact-mob list">
-            <li class="contact-mob-item">
-              <a class="contact-mob-link" href="tel:+380961111111">
-                +38 096 111 11 11
-              </a>
-            </li>
-            <li class="contact-mob-item">
-              <a
-                class="contact-mob-link mail-mob"
-                href="mailto:info@devstudio.com"
-              >
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="mob-social-list list">
-            <li class="mob-social-item">
-              <a href="" class="mob-social-link">Instagram</a>
-            </li>
-            <li class="mob-social-item">
-              <a href="" class="mob-social-link">Twitter</a>
-            </li>
-            <li class="mob-social-item">
-              <a href="" class="mob-social-link">Facebook</a>
-            </li>
-            <li class="mob-social-item">
-              <a href="" class="mob-social-link">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="menu-mob-list list">
+          <li class="menu-mob-item">
+            <a href="./index.html" class="menu-mob-link actual">Студія</a>
+          </li>
+          <li class="menu-mob-item">
+            <a href="./portfolio.html" class="menu-mob-link">Портфоліо</a>
+          </li>
+          <li class="menu-mob-item">
+            <a href="" class="menu-mob-link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="contact-mob-list list">
+          <li class="contact-mob-item">
+            <a class="contact-mob-link" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="contact-mob-item">
+            <a
+              class="contact-mob-link mail-mob"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mob-social-list list">
+          <li class="mob-social-item">
+            <a href="" class="mob-social-link">Instagram</a>
+          </li>
+          <li class="mob-social-item">
+            <a href="" class="mob-social-link">Twitter</a>
+          </li>
+          <li class="mob-social-item">
+            <a href="" class="mob-social-link">Facebook</a>
+          </li>
+          <li class="mob-social-item">
+            <a href="" class="mob-social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
 
       <div class="page-header__content container">
         <nav class="page-header__nav">
@@ -582,7 +582,7 @@
           </div>
           <!--Приєднуйтесь-footer -->
           <div class="joinin">
-              <strong class="join-title">приєднуйтесь</strong>
+            <strong class="join-title">приєднуйтесь</strong>
             <div class="social-list-join">
               <ul class="social-list list">
                 <li class="social-list__item">
@@ -619,7 +619,7 @@
         </div>
         <!--Підпишиться-footer -->
         <div class="signup">
-            <strong class="sign-title">Підпишіться на розсилку</strong>
+          <strong class="sign-title">Підпишіться на розсилку</strong>
           <form class="sign-form">
             <label class="email-footer">
               <input

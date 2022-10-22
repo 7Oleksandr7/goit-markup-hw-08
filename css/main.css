@@ -465,6 +465,13 @@ input {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: var(--primary-white-color);
   z-index: 999;
   -webkit-transform: translateX(-100%);
@@ -480,15 +487,14 @@ input {
           transform: translateX(0);
 }
 
-.menu-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .menu-mob-list {
-    width: 100%;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.17;
+    padding-top: 48px;
+    padding-left: 40px;
+    margin-bottom: auto;
   }
 }
 @media screen and (min-width: 480px) {
@@ -496,8 +502,6 @@ input {
     font-size: 40px;
     font-weight: 500;
     line-height: 1.17;
-    padding-top: 48px;
-    padding-left: 40px;
   }
 }
 
@@ -514,15 +518,15 @@ input {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 479px) {
-  .contact-mob {
-    width: 100%;
+@media screen and (min-width: 320px) {
+  .contact-mob-list {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.17;
   }
 }
 @media screen and (min-width: 480px) {
-  .contact-mob {
-    margin-top: 274px;
-    padding-left: 40px;
+  .contact-mob-list {
     font-size: 34px;
     font-weight: 500;
     line-height: 1.18;
@@ -530,6 +534,7 @@ input {
 }
 
 .contact-mob-item {
+  padding-left: 40px;
   padding-bottom: 32px;
 }
 
@@ -540,27 +545,42 @@ input {
 
 .mail-mob {
   color: var(--secondary-text-color);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.17;
+}
+@media screen and (min-width: 320px) {
+  .mail-mob {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.22;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mail-mob {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+  }
 }
 
-@media screen and (max-width: 479px) {
+.mob-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  padding-top: 32px;
+}
+@media screen and (min-width: 320px) {
   .mob-social-list {
-    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.22;
   }
 }
 @media screen and (min-width: 480px) {
   .mob-social-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.22;
-    font-weight: 500;
-    padding-left: 40px;
-    margin-top: 32px;
   }
 }
 
