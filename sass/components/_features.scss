@@ -9,14 +9,8 @@
   }
 
   @include desktop {
-    flex-basis: calc((100% - 90px) / 4);
-    margin-right: 30px;
+    height: 248px;
     text-align: left;
-  }
-
-  &:last-child {
-    margin-right: 0;
-    margin-bottom: 0;
   }
 }
 

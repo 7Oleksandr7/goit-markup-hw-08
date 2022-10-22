@@ -12,9 +12,10 @@
     margin: -15px;
    }
 
-
   @include desktop {
     display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
   }
 }
 
@@ -29,6 +30,13 @@
   height: 92px;
   margin: 15px;
   }
+  @include desktop{
+  width: 170px;
+  height: 92px;
+  margin: 0;
+  margin-right: 30px;
+  }
+
 }
 
 .client-logo {
