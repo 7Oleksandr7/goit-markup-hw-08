@@ -177,6 +177,7 @@ input {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -190,6 +191,12 @@ input {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .section__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section__item {
@@ -658,7 +665,8 @@ input {
 }
 @media screen and (min-width: 768px) {
   .feature-item {
-    margin-right: 30px;
+    width: 354px;
+    height: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1032,7 +1040,13 @@ input {
 }
 @media screen and (min-width: 768px) {
   .signup {
-    display: inline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1044,6 +1058,7 @@ input {
 @media screen and (min-width: 768px) {
   .sign-title {
     margin-right: auto;
+    margin-left: auto;
     letter-spacing: 0.03em;
   }
 }

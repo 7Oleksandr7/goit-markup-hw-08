@@ -144,7 +144,8 @@
   text-align: center;
 
   @include tablet {
-    display: inline;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -155,6 +156,7 @@
 
   @include tablet {
     margin-right: auto;
+    margin-left: auto;
     letter-spacing: 0.03em;
   }
   
