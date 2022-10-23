@@ -1353,12 +1353,21 @@ input {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
   background: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-height: 320px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1408,15 +1417,25 @@ input {
   }
 }
 .modal-imput {
-  width: 370px;
-  height: 40px;
-  margin-top: 4px;
   padding: 11px 12px 11px 41px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-height: 320px) {
+  .modal-imput {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-imput {
+    width: 370px;
+    height: 40px;
+    margin-top: 4px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-imput {
@@ -1437,12 +1456,21 @@ input {
   border-radius: 50%;
 }
 
-.close-button {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-height: 320px) {
+  .close-button {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .close-button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .close-button:hover, .close-button:focus {
   fill: var(--accent-color);
@@ -1463,14 +1491,25 @@ input {
 .comment {
   margin-top: 4px;
   resize: none;
-  width: 370px;
-  height: 120px;
-  padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-height: 320px) {
+  .comment {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .comment {
+    width: 370px;
+    height: 120px;
+    padding: 12px 16px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .comment {
@@ -1531,8 +1570,6 @@ input {
 }
 
 .send-form {
-  width: 200px;
-  height: 50px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
@@ -1542,4 +1579,16 @@ input {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+@media screen and (min-height: 320px) {
+  .send-form {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .send-form {
+    width: 200px;
+    height: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */
