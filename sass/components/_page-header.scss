@@ -33,12 +33,12 @@
     @include tablet {
       display: flex;
       margin-left: 87px;
-      margin-right: auto;
     }
 
     @include desktop {
       display: flex;
       margin-left: 93px;
+      margin-right: 0;
     }
   }
 

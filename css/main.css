@@ -281,7 +281,6 @@ input {
     display: -ms-flexbox;
     display: flex;
     margin-left: 87px;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -290,6 +289,7 @@ input {
     display: -ms-flexbox;
     display: flex;
     margin-left: 93px;
+    margin-right: 0;
   }
 }
 .page-header__item {
@@ -411,12 +411,12 @@ input {
 
 .contact {
   display: none;
-  margin-left: auto;
-  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .contact {
+    cursor: pointer;
     display: inline;
+    margin-left: auto;
     padding: 21px 0 0 0;
   }
 }
@@ -425,6 +425,7 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

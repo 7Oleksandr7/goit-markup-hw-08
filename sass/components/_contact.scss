@@ -1,15 +1,16 @@
 .contact {
   display: none;
-  margin-left: auto;
-  cursor: pointer;
-
+  
   @include tablet {
+    cursor: pointer;
     display: inline;
+    margin-left: auto;
     padding: 21px 0 0 0;
   }
 
   @include desktop {
     display: flex;
+    margin-left: auto;
     justify-content: center;
     align-items: center;
     padding: 0;
