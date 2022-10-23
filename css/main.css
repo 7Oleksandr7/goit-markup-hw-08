@@ -376,6 +376,39 @@ input {
   color: var(--accent-color);
 }
 
+.logo-footer {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  padding: 0;
+  color: var(--primary-black-color);
+  font-family: Raleway;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+  }
+}
+.logo-footer--accent {
+  color: var(--accent-color);
+}
+
+.logo-footer--accent:hover,
+.logo-footer--accent:focus {
+  color: var(--accent-color);
+}
+
+.logo-footer:hover .white,
+.logo-footer:focus .white {
+  color: var(--accent-color);
+}
+
 .contact {
   display: none;
   margin-left: auto;
