@@ -81,7 +81,7 @@
   padding-top: 32px;
 
   @media screen and(min-width:320px) {
-    @include font(12px, 500, 1.22);
+    @include font(12px, 700, 1.4);
   }
   @include mobile {
     @include font(18px, 500, 1.22);
@@ -89,11 +89,17 @@
 }
 
 .mob-social-item {
-  padding-right: 10px;
-  padding-left: 10px;
-  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  @media screen and(min-width:320px) {
+    padding-right: 6px;
+    padding-left: 6px;
+    border-left: 1px solid rgba(33, 33, 33, 0.2)
+  }
+  @include mobile {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+    }
 }
-
 .mob-social-item:first-child {
   padding-left: 0;
   border-left: none;
