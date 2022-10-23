@@ -280,8 +280,8 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 96px;
     margin-left: 87px;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1003,32 +1003,18 @@ input {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .logo-address-joinin {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 76px;
-    margin-right: 89px;
+@media screen and (min-width: 320px) {
+  .logo-address {
+    text-align: center;
+    margin-right: auto;
+    letter-spacing: 0.03em;
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .logo-address-joinin {
-    margin: auto;
-  }
-}
-
-.logo-address {
-  text-align: center;
-  margin-right: auto;
-  letter-spacing: 0.03em;
-  margin-bottom: 60px;
-}
 @media screen and (min-width: 768px) {
   .logo-address {
-    margin-right: 165px;
     margin-bottom: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1093,6 +1079,8 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;
     margin-bottom: 0;
   }
@@ -1136,12 +1124,31 @@ input {
   background-color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .logo-address-joinin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-address-joinin {
+    margin: auto;
+  }
+}
+
 /* signup */
 .signup {
   margin-left: auto;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .signup {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1150,6 +1157,9 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1167,8 +1177,7 @@ input {
 }
 @media screen and (min-width: 1200px) {
   .sign-title {
-    margin: 0 363px 0 0;
-    text-align: right;
+    margin: 0;
   }
 }
 
@@ -1192,23 +1201,25 @@ input {
   background-color: var(--hero-footer-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 320px) {
   .sign-email {
     width: 100%;
     height: 100%;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 480px) {
   .sign-email {
     width: 450px;
     height: 50px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .sign-email {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
