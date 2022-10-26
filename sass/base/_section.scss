@@ -39,7 +39,7 @@
 
   &__list {
     @media screen and (min-width: 320px) {
-    display: inline;
+    display: block;
   }
 
     @include mobile {

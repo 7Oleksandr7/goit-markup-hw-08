@@ -682,24 +682,22 @@
               ></textarea>
             </label>
             <!-- Чекбокс -->
-            <div class="accept">
+            <label for="accept" class="accept">
               <input
                 type="checkbox"
                 name="accept"
                 id="accept"
-                class="visually-hidden"
+                class="accept-input visually-hidden"
                 required
               />
-              <div class="checkbox">
-                <svg class="accept-icon">
-                  <use href="./images/icons.svg#icon-check-mark"></use>
+              <svg class="accept-icon">
+                  <use href="./images/symbol-defs.svg#icon-checkbox" class="checkbox"></use>
+                  <use href="./images/symbol-defs.svg#icon-checked" class="checked"></use>
                 </svg>
-              </div>
-              <label for="accept" class="pointer"
-                >Погоджуюся з розсилкою та приймаю
+                Погоджуюся з розсилкою та приймаю
                 <span class="terms"><a href="">Умови договору</a></span>
-              </label>
-            </div>
+            </label>
+            <!-- send-btn -->
             <div class="send-btn">
               <button type="submit" class="send-form pointer">
                 Відправити

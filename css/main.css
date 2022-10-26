@@ -157,7 +157,7 @@ input {
 }
 @media screen and (min-width: 320px) {
   .section__list {
-    display: inline;
+    display: block;
   }
 }
 @media screen and (min-width: 480px) {
@@ -220,7 +220,7 @@ input {
   }
 }
 
-.checkbox, .accept, .sign-button, .social-logo-footer, .client-logo, .social-list__logo, .social-list, .features-wrap {
+.sign-button, .social-logo-footer, .client-logo, .social-list__logo, .social-list, .features-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,7 +289,6 @@ input {
     display: -ms-flexbox;
     display: flex;
     margin-left: 93px;
-    margin-right: 0;
   }
 }
 .page-header__item {
@@ -990,7 +989,7 @@ input {
 }
 @media screen and (min-width: 768px) {
   .footer-content {
-    display: inline;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1659,10 +1658,30 @@ input {
 .accept {
   margin-top: 10px;
   margin-bottom: 30px;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.17;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 320px) {
+  .accept {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 480px) {
+  .accept {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .accept {
@@ -1671,27 +1690,29 @@ input {
     line-height: 1.71;
   }
 }
-.accept input:checked + .checkbox {
-  background-color: var(--accent-color);
-  border: 2px solid var(--accent-color);
-  border-radius: 2px;
-}
+
 .accept-icon {
-  height: 8px;
-  width: 11px;
+  width: 16px;
+  height: 15px;
+  margin-right: 4px;
 }
 
-.checkbox {
-  height: 15px;
-  width: 16px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-  margin-right: 5px;
+.checked {
+  opacity: 0;
+}
+
+.accept-input:checked + .accept-icon > .checkbox {
+  opacity: 0;
+}
+
+.accept-input:checked + .accept-icon > .checked {
+  opacity: 1;
 }
 
 .terms a {
   color: var(--accent-color);
   text-decoration: underline;
+  margin-left: 4px;
 }
 
 .send-btn {
